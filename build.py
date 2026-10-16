@@ -9,7 +9,7 @@ Inputs (see sources.json):
   logs/business_hub_index.html     the IGCSE Business course hub (optional)
   curriculum_map.json              syllabus units, keywords, indicative exam weights
   observations.json                strengths / weaknesses / improvements / gaps (hand-curated)
-Outputs (docs/data): sessions, weekly, syllabus, materials, plan, observations, evaluation, meta
+Outputs (docs/data): sessions, weekly, syllabus, timeline, materials, plan, observations, evaluation, meta
 Payment columns are never read. Requires: openpyxl.
 """
 import sys, os, re, json, argparse, datetime as dt
@@ -270,7 +270,10 @@ def main():
                              "status": status, "subtopics": n_tot, "subtopics_covered": n_cov, "subtopics_prepared": n_prep,
                              "coverage": round(n_cov / n_tot, 3), "prepared": round(n_prep / n_tot, 3) if cm.get("_prepared") else None,
                              "sessions": len(ss), "first_date": min((s["date"] for s in ss), default=None), "last_date": max((s["date"] for s in ss), default=None),
-                             "subtopic_list": " · ".join(u.get("subtopics_en", []))})
+                             "subtopic_list": " · ".join(u.get("subtopics_en", [])),
+                             "subtopic_detail": [{"name": n, "covered": bool(cov[i]) if "subtopics_covered" in cm else bool(ss),
+                                                  "prepared": bool(cm.get("_prepared", {}).get(u["id"], [False] * n_tot)[i]) if cm.get("_prepared") else False}
+                                                 for i, n in enumerate(u.get("subtopics_en", []))]})
     # SAT domains from the Maths units
     unit_status = {r["unit"]: r["status"] for r in syllabus if r["exam"] == "maths_p1"}
     for dmn in cmap["maths"]["sat"]["domains"]:
@@ -286,6 +289,45 @@ def main():
                          "status": status, "subtopics": len(feeds) or 1, "subtopics_covered": len(done), "subtopics_prepared": 0, "coverage": cov, "prepared": None,
                          "sessions": sum(1 for s in sessions if s["subject"] == "maths" and s["unit"] in feeds), "first_date": None, "last_date": None,
                          "subtopic_list": dmn["detail_en"] + " || " + dmn["detail_vi"]})
+
+    # timeline: cumulative share of exam marks taught, week by week (how the taught syllabus converges on each exam)
+    timeline = []
+    if sessions:
+        weeks = []
+        d, last = dt.date.fromisoformat(min(s["week"] for s in sessions)), dt.date.fromisoformat(max(s["week"] for s in sessions))
+        while d <= last:
+            weeks.append(d.isoformat()); d += dt.timedelta(days=7)
+
+        def unit_dates(sub, uid):
+            """Dates of the sessions that advance a unit: taught lessons, or every mapped session if none is a lesson."""
+            ss = [s for s in sessions if s["subject"] == sub and s["unit"] == uid]
+            teach = [s for s in ss if s["kind"] == "teach"]
+            return sorted(s["date"] for s in (teach or ss))
+
+        def progress(dates, week):
+            if not dates:
+                return 0.0
+            end = (dt.date.fromisoformat(week) + dt.timedelta(days=6)).isoformat()
+            return sum(1 for x in dates if x <= end) / len(dates)
+
+        for exam in ("maths_p1", "econ_igcse", "business_igcse", "sat_math"):
+            rows = [r for r in syllabus if r["exam"] == exam]
+            total_w = sum(r["weight"] for r in rows)
+            if exam == "sat_math":
+                feeds = {dmn["name_en"]: dmn["feeds_from"] for dmn in cmap["maths"]["sat"]["domains"]}
+                dates = {r["unit"]: [unit_dates("maths", f) for f in feeds[r["unit"]]] for r in rows}
+            else:
+                dates = {r["unit"]: unit_dates(r["subject"], r["unit"]) for r in rows}
+            for w in weeks:
+                cov = 0.0
+                for r in rows:
+                    if exam == "sat_math":
+                        fl = dates[r["unit"]]; pr = sum(progress(x, w) for x in fl) / len(fl) if fl else 0.0
+                    else:
+                        pr = progress(dates[r["unit"]], w)
+                    cov += r["weight"] * r["coverage"] * pr
+                timeline.append({"exam": exam, "week": w, "coverage": round(cov / total_w, 4) if total_w else 0.0,
+                                 "sessions": sum(1 for s in sessions if s["week"] == w and s["subject"] == ("maths" if exam == "sat_math" else rows[0]["subject"] if rows else ""))})
 
     # plan vs actual
     plan = []
@@ -304,18 +346,22 @@ def main():
         p["verdict"] = VERDICTS.get((p["month"], p["subject"]), "unreported")
         plan.append(p)
 
-    meta = {"generated": dt.datetime.now().astimezone().isoformat(timespec="minutes"), "student": cfg["student"],
+    exams = {}
+    for sub, sc in subjects.items():
+        exams[sc["exam"]] = {"subject": sub, "title": cmap[sub].get("exam", ""), "dates": cmap[sub].get("exam_dates", [])}
+    exams["sat_math"] = {"subject": "maths", "title": cmap["maths"]["sat"].get("exam", ""), "dates": cmap["maths"]["sat"].get("exam_dates", [])}
+    meta = {"generated": dt.datetime.now().astimezone().isoformat(timespec="minutes"), "student": cfg["student"], "exams": exams,
             "subjects": {sub: {"label_en": sc["label_en"], "label_vi": sc["label_vi"], "tutor": sc["tutor"], "exam": sc["exam"], "log": os.path.basename(sc["log"]),
                                "log_found": os.path.exists(os.path.join(HERE, sc["log"]))} for sub, sc in subjects.items()},
             "warnings": warnings}
 
-    for name, rows in (("sessions", sessions), ("weekly", weekly_rows), ("syllabus", syllabus), ("materials", materials),
+    for name, rows in (("sessions", sessions), ("weekly", weekly_rows), ("syllabus", syllabus), ("timeline", timeline), ("materials", materials),
                        ("observations", obs), ("plan", plan), ("evaluation", EVALUATION), ("meta", meta)):
         with open(os.path.join(out_dir, f"{name}.json"), "w", encoding="utf-8") as f:
             json.dump(rows, f, ensure_ascii=False, indent=0)
     with open(os.path.join(out_dir, "feedback_notes.json"), "w", encoding="utf-8") as f:
         json.dump(feedback, f, ensure_ascii=False, indent=0)  # raw tutor notes, for maintaining observations.json
-    print(f"wrote {out_dir}: {len(sessions)} sessions, {len(weekly_rows)} weekly rows, {len(syllabus)} syllabus rows, {len(materials)} materials")
+    print(f"wrote {out_dir}: {len(sessions)} sessions, {len(weekly_rows)} weekly rows, {len(syllabus)} syllabus rows, {len(timeline)} timeline rows, {len(materials)} materials")
     for w in warnings:
         print("WARNING:", w)
 
