@@ -15,7 +15,8 @@
 "sessions": 6,
 "first_date": "2026-06-19",
 "last_date": "2026-06-29",
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -33,7 +34,8 @@
 "sessions": 4,
 "first_date": "2026-06-30",
 "last_date": "2026-07-05",
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -51,7 +53,8 @@
 "sessions": 4,
 "first_date": "2026-07-07",
 "last_date": "2026-07-21",
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -69,7 +72,8 @@
 "sessions": 1,
 "first_date": "2026-07-28",
 "last_date": "2026-07-28",
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -87,7 +91,8 @@
 "sessions": 4,
 "first_date": "2026-08-02",
 "last_date": "2026-08-21",
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -105,7 +110,8 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -123,7 +129,8 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "maths_p1",
@@ -141,7 +148,8 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": ""
+"subtopic_list": "",
+"subtopic_detail": []
 },
 {
 "exam": "econ_igcse",
@@ -159,7 +167,29 @@
 "sessions": 5,
 "first_date": "2026-07-08",
 "last_date": "2026-07-24",
-"subtopic_list": "Nature of the economic problem · Factors of production · Opportunity cost · Production possibility curve"
+"subtopic_list": "Nature of the economic problem · Factors of production · Opportunity cost · Production possibility curve",
+"subtopic_detail": [
+{
+"name": "Nature of the economic problem",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Factors of production",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Opportunity cost",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Production possibility curve",
+"covered": true,
+"prepared": false
+}
+]
 },
 {
 "exam": "econ_igcse",
@@ -177,7 +207,64 @@
 "sessions": 13,
 "first_date": "2026-07-27",
 "last_date": "2026-09-15",
-"subtopic_list": "Micro & macro · Role of markets · Demand · Supply · Price determination · Price changes · PED · PES · Market economic system · Market failure · Mixed economic system"
+"subtopic_list": "Micro & macro · Role of markets · Demand · Supply · Price determination · Price changes · PED · PES · Market economic system · Market failure · Mixed economic system",
+"subtopic_detail": [
+{
+"name": "Micro & macro",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Role of markets",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Demand",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Supply",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Price determination",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Price changes",
+"covered": true,
+"prepared": false
+},
+{
+"name": "PED",
+"covered": true,
+"prepared": false
+},
+{
+"name": "PES",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Market economic system",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Market failure",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Mixed economic system",
+"covered": true,
+"prepared": false
+}
+]
 },
 {
 "exam": "econ_igcse",
@@ -195,7 +282,49 @@
 "sessions": 6,
 "first_date": "2026-09-05",
 "last_date": "2026-09-23",
-"subtopic_list": "Money & banking · Households · Workers · Trade unions · Firms · Firms & production · Costs, revenue & objectives · Market structure"
+"subtopic_list": "Money & banking · Households · Workers · Trade unions · Firms · Firms & production · Costs, revenue & objectives · Market structure",
+"subtopic_detail": [
+{
+"name": "Money & banking",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Households",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Workers",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Trade unions",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Firms",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Firms & production",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Costs, revenue & objectives",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Market structure",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "econ_igcse",
@@ -213,7 +342,49 @@
 "sessions": 2,
 "first_date": "2026-10-09",
 "last_date": "2026-10-11",
-"subtopic_list": "Role of government · Macroeconomic aims · Fiscal policy · Monetary policy · Supply-side policy · Economic growth · Employment & unemployment · Inflation & deflation"
+"subtopic_list": "Role of government · Macroeconomic aims · Fiscal policy · Monetary policy · Supply-side policy · Economic growth · Employment & unemployment · Inflation & deflation",
+"subtopic_detail": [
+{
+"name": "Role of government",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Macroeconomic aims",
+"covered": true,
+"prepared": false
+},
+{
+"name": "Fiscal policy",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Monetary policy",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Supply-side policy",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Economic growth",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Employment & unemployment",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Inflation & deflation",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "econ_igcse",
@@ -231,7 +402,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "Living standards · Poverty · Population · Differences in economic development"
+"subtopic_list": "Living standards · Poverty · Population · Differences in economic development",
+"subtopic_detail": [
+{
+"name": "Living standards",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Poverty",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Population",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Differences in economic development",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "econ_igcse",
@@ -249,7 +442,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "International specialisation · Globalisation, FTAs & MNCs · Foreign exchange rates · Current account of BoP"
+"subtopic_list": "International specialisation · Globalisation, FTAs & MNCs · Foreign exchange rates · Current account of BoP",
+"subtopic_detail": [
+{
+"name": "International specialisation",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Globalisation, FTAs & MNCs",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Foreign exchange rates",
+"covered": false,
+"prepared": false
+},
+{
+"name": "Current account of BoP",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -267,7 +482,34 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "1.1 Business activity · 1.2 Classification of businesses · 1.3 Enterprise, growth & size · 1.4 Types of organisation · 1.5 Objectives & stakeholders"
+"subtopic_list": "1.1 Business activity · 1.2 Classification of businesses · 1.3 Enterprise, growth & size · 1.4 Types of organisation · 1.5 Objectives & stakeholders",
+"subtopic_detail": [
+{
+"name": "1.1 Business activity",
+"covered": false,
+"prepared": true
+},
+{
+"name": "1.2 Classification of businesses",
+"covered": false,
+"prepared": true
+},
+{
+"name": "1.3 Enterprise, growth & size",
+"covered": false,
+"prepared": true
+},
+{
+"name": "1.4 Types of organisation",
+"covered": false,
+"prepared": true
+},
+{
+"name": "1.5 Objectives & stakeholders",
+"covered": false,
+"prepared": true
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -285,7 +527,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "2.1 Motivation · 2.2 Organisation & management · 2.3 Recruitment, selection & training · 2.4 Communication"
+"subtopic_list": "2.1 Motivation · 2.2 Organisation & management · 2.3 Recruitment, selection & training · 2.4 Communication",
+"subtopic_detail": [
+{
+"name": "2.1 Motivation",
+"covered": false,
+"prepared": true
+},
+{
+"name": "2.2 Organisation & management",
+"covered": false,
+"prepared": true
+},
+{
+"name": "2.3 Recruitment, selection & training",
+"covered": false,
+"prepared": true
+},
+{
+"name": "2.4 Communication",
+"covered": false,
+"prepared": true
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -303,7 +567,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "3.1 Marketing, competition & the customer · 3.2 Market research · 3.3 Marketing mix · 3.4 Marketing strategy"
+"subtopic_list": "3.1 Marketing, competition & the customer · 3.2 Market research · 3.3 Marketing mix · 3.4 Marketing strategy",
+"subtopic_detail": [
+{
+"name": "3.1 Marketing, competition & the customer",
+"covered": false,
+"prepared": true
+},
+{
+"name": "3.2 Market research",
+"covered": false,
+"prepared": true
+},
+{
+"name": "3.3 Marketing mix",
+"covered": false,
+"prepared": true
+},
+{
+"name": "3.4 Marketing strategy",
+"covered": false,
+"prepared": true
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -321,7 +607,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "4.1 Production of goods & services · 4.2 Costs, scale & break-even · 4.3 Quality · 4.4 Location"
+"subtopic_list": "4.1 Production of goods & services · 4.2 Costs, scale & break-even · 4.3 Quality · 4.4 Location",
+"subtopic_detail": [
+{
+"name": "4.1 Production of goods & services",
+"covered": false,
+"prepared": true
+},
+{
+"name": "4.2 Costs, scale & break-even",
+"covered": false,
+"prepared": true
+},
+{
+"name": "4.3 Quality",
+"covered": false,
+"prepared": true
+},
+{
+"name": "4.4 Location",
+"covered": false,
+"prepared": true
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -339,7 +647,34 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "5.1 Business finance: needs & sources · 5.2 Cash-flow forecasting · 5.3 Income statements · 5.4 Statement of financial position · 5.5 Analysis of accounts"
+"subtopic_list": "5.1 Business finance: needs & sources · 5.2 Cash-flow forecasting · 5.3 Income statements · 5.4 Statement of financial position · 5.5 Analysis of accounts",
+"subtopic_detail": [
+{
+"name": "5.1 Business finance: needs & sources",
+"covered": false,
+"prepared": true
+},
+{
+"name": "5.2 Cash-flow forecasting",
+"covered": false,
+"prepared": true
+},
+{
+"name": "5.3 Income statements",
+"covered": false,
+"prepared": true
+},
+{
+"name": "5.4 Statement of financial position",
+"covered": false,
+"prepared": false
+},
+{
+"name": "5.5 Analysis of accounts",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "business_igcse",
@@ -357,7 +692,29 @@
 "sessions": 0,
 "first_date": null,
 "last_date": null,
-"subtopic_list": "6.1 Economic issues · 6.2 Environmental & ethical issues · 6.3 Business & the international economy · 6.4 (legacy) Government influence"
+"subtopic_list": "6.1 Economic issues · 6.2 Environmental & ethical issues · 6.3 Business & the international economy · 6.4 (legacy) Government influence",
+"subtopic_detail": [
+{
+"name": "6.1 Economic issues",
+"covered": false,
+"prepared": false
+},
+{
+"name": "6.2 Environmental & ethical issues",
+"covered": false,
+"prepared": false
+},
+{
+"name": "6.3 Business & the international economy",
+"covered": false,
+"prepared": false
+},
+{
+"name": "6.4 (legacy) Government influence",
+"covered": false,
+"prepared": false
+}
+]
 },
 {
 "exam": "sat_math",

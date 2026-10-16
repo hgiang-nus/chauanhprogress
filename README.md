@@ -1,16 +1,24 @@
 # Châu Anh Progress — parent dashboard
 
-A static dashboard for Châu Anh's parents, built from the tutors' class logs:
-what was covered each week, how that matches the A-Level / IGCSE / SAT exams,
-and the strengths, weaknesses and improvements the tutors reported.
-Vietnamese by default, English toggle. Light and dark themes. Works on GitHub Pages.
+A static dashboard for Châu Anh's parents, built from the tutors' class logs.
+It answers one question first: how close is what has been taught to the actual
+exams? Part 1 shows, for each exam (A-Level Maths Paper 1, IGCSE Economics,
+IGCSE Business, SAT Math), the share of exam marks already taught, how that
+share has grown week by week, which topics are still missing and how heavy they
+are, the teaching pace, and the agreed monthly plan against what was taught.
+Part 2 is the week-by-week record (hours, every lesson with its exam chapter,
+and a filterable session log). Part 3 lists strengths, areas to improve and
+progress as dated bullet points, plus assessments on record and the student's
+own course evaluation.
+Vietnamese by default, English at `#en` or via the toggle. Light, dark and print
+styles. Works on GitHub Pages.
 
 ```
 chauanh-progress/
 ├── build.py               # reads the logs, writes docs/data/*.json
 ├── sources.json           # which log file belongs to which subject
-├── curriculum_map.json    # syllabus units, keywords, indicative exam weights
-├── observations.json      # strengths / weaknesses / improvements / gaps (hand-curated, bilingual)
+├── curriculum_map.json    # syllabus units, keywords, indicative exam weights, exam dates
+├── observations.json      # strengths / weaknesses / improvements (hand-curated, bilingual; 'gap' rows are kept for maintainers, not shown)
 ├── logs/                  # the inputs
 │   ├── Payment_Maths.xlsx         Phat  — A-Level Maths 9709
 │   ├── Payment_Econs.xlsx         Duy   — IGCSE Economics 0455
@@ -56,7 +64,14 @@ cd docs && python3 -m http.server 8000   # open http://localhost:8000
   `observations.json`; the page never classifies a tutor's words by itself.
 - Exam weights in `curriculum_map.json` are indicative (syllabus subtopic
   counts, recent past papers), and the page says so. For Economics and Business
-  tick `subtopics_covered` as units are taught.
+  tick `subtopics_covered` as units are taught; the page shows them as a
+  checklist under each unit.
+- `exam_dates` in `curriculum_map.json` (per subject, and under `maths.sat`)
+  lists the papers the student is registered for. Leave it `[]` until the
+  sitting is fixed; the page then says "exam date not set".
+- The weekly coverage curve (`timeline.json`) credits a unit's coverage as its
+  taught lessons happen, so the curve ends exactly at the current coverage.
+  The pace line is a plain average over weeks with a session, flagged as such.
 - Business has two sources on purpose: the class log (taught sessions, solid
   bars) and the course hub (decks ready, outlined bars). The hub is read from
   `logs/business_hub_index.html`; copy the live `index.html` over it whenever a
@@ -73,9 +88,10 @@ cd docs && python3 -m http.server 8000   # open http://localhost:8000
 |---|---|---|
 | `sessions.json` | logged session | date, week, subject, tutor, content, hours, kind, unit, unit_en/vi, recording |
 | `weekly.json` | week × subject | week, subject, sessions, hours, topics, units |
-| `syllabus.json` | exam topic | exam, unit, name_en/vi, weight, status, subtopics, subtopics_covered, subtopics_prepared, coverage, prepared |
+| `syllabus.json` | exam topic | exam, unit, name_en/vi, weight, status, subtopics, subtopics_covered, subtopics_prepared, coverage, prepared, sessions, first/last_date, subtopic_detail |
+| `timeline.json` | week × exam | week, exam, coverage (cumulative share of exam marks taught), sessions |
 | `materials.json` | Business deck | session, title, status (ready / coming_soon), units, file |
 | `plan.json` | month × subject | planned_en/vi, actual_en/vi, verdict |
-| `observations.json` | observation | type, subject, date, source, title/detail (vi, en), quote, response, status |
+| `observations.json` | observation | type, subject, date, source, title/detail (vi, en), quote, response, status — the page shows date, title, detail, response and status only |
 | `evaluation.json` | survey item | item_en/vi, score, max |
-| `meta.json` | build | generated, subjects, warnings |
+| `meta.json` | build | generated, subjects, exams (title, dates), warnings |

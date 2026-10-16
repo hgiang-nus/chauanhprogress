@@ -1,0 +1,410 @@
+[
+{
+"exam": "maths_p1",
+"week": "2026-06-15",
+"coverage": 0.032,
+"sessions": 4
+},
+{
+"exam": "maths_p1",
+"week": "2026-06-22",
+"coverage": 0.064,
+"sessions": 2
+},
+{
+"exam": "maths_p1",
+"week": "2026-06-29",
+"coverage": 0.18,
+"sessions": 5
+},
+{
+"exam": "maths_p1",
+"week": "2026-07-06",
+"coverage": 0.2533,
+"sessions": 2
+},
+{
+"exam": "maths_p1",
+"week": "2026-07-13",
+"coverage": 0.2533,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-07-20",
+"coverage": 0.29,
+"sessions": 4
+},
+{
+"exam": "maths_p1",
+"week": "2026-07-27",
+"coverage": 0.4025,
+"sessions": 2
+},
+{
+"exam": "maths_p1",
+"week": "2026-08-03",
+"coverage": 0.435,
+"sessions": 1
+},
+{
+"exam": "maths_p1",
+"week": "2026-08-10",
+"coverage": 0.4675,
+"sessions": 1
+},
+{
+"exam": "maths_p1",
+"week": "2026-08-17",
+"coverage": 0.5,
+"sessions": 1
+},
+{
+"exam": "maths_p1",
+"week": "2026-08-24",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-08-31",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-09-07",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-09-14",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-09-21",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-09-28",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "maths_p1",
+"week": "2026-10-05",
+"coverage": 0.5,
+"sessions": 0
+},
+{
+"exam": "econ_igcse",
+"week": "2026-06-15",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "econ_igcse",
+"week": "2026-06-22",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "econ_igcse",
+"week": "2026-06-29",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "econ_igcse",
+"week": "2026-07-06",
+"coverage": 0.05,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-07-13",
+"coverage": 0.05,
+"sessions": 0
+},
+{
+"exam": "econ_igcse",
+"week": "2026-07-20",
+"coverage": 0.1,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-07-27",
+"coverage": 0.1933,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-08-03",
+"coverage": 0.2244,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-08-10",
+"coverage": 0.2867,
+"sessions": 2
+},
+{
+"exam": "econ_igcse",
+"week": "2026-08-17",
+"coverage": 0.3489,
+"sessions": 2
+},
+{
+"exam": "econ_igcse",
+"week": "2026-08-24",
+"coverage": 0.3489,
+"sessions": 1
+},
+{
+"exam": "econ_igcse",
+"week": "2026-08-31",
+"coverage": 0.4075,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-09-07",
+"coverage": 0.4625,
+"sessions": 2
+},
+{
+"exam": "econ_igcse",
+"week": "2026-09-14",
+"coverage": 0.49,
+"sessions": 2
+},
+{
+"exam": "econ_igcse",
+"week": "2026-09-21",
+"coverage": 0.5175,
+"sessions": 3
+},
+{
+"exam": "econ_igcse",
+"week": "2026-09-28",
+"coverage": 0.5175,
+"sessions": 2
+},
+{
+"exam": "econ_igcse",
+"week": "2026-10-05",
+"coverage": 0.5725,
+"sessions": 2
+},
+{
+"exam": "business_igcse",
+"week": "2026-06-15",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-06-22",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-06-29",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-07-06",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-07-13",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-07-20",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-07-27",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-08-03",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-08-10",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-08-17",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-08-24",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-08-31",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-09-07",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-09-14",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-09-21",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-09-28",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "business_igcse",
+"week": "2026-10-05",
+"coverage": 0.0,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-06-15",
+"coverage": 0.07,
+"sessions": 4
+},
+{
+"exam": "sat_math",
+"week": "2026-06-22",
+"coverage": 0.14,
+"sessions": 2
+},
+{
+"exam": "sat_math",
+"week": "2026-06-29",
+"coverage": 0.35,
+"sessions": 5
+},
+{
+"exam": "sat_math",
+"week": "2026-07-06",
+"coverage": 0.51,
+"sessions": 2
+},
+{
+"exam": "sat_math",
+"week": "2026-07-13",
+"coverage": 0.51,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-07-20",
+"coverage": 0.59,
+"sessions": 4
+},
+{
+"exam": "sat_math",
+"week": "2026-07-27",
+"coverage": 0.6275,
+"sessions": 2
+},
+{
+"exam": "sat_math",
+"week": "2026-08-03",
+"coverage": 0.635,
+"sessions": 1
+},
+{
+"exam": "sat_math",
+"week": "2026-08-10",
+"coverage": 0.6425,
+"sessions": 1
+},
+{
+"exam": "sat_math",
+"week": "2026-08-17",
+"coverage": 0.65,
+"sessions": 1
+},
+{
+"exam": "sat_math",
+"week": "2026-08-24",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-08-31",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-09-07",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-09-14",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-09-21",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-09-28",
+"coverage": 0.65,
+"sessions": 0
+},
+{
+"exam": "sat_math",
+"week": "2026-10-05",
+"coverage": 0.65,
+"sessions": 0
+}
+]

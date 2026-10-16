@@ -1,6 +1,37 @@
 {
-"generated": "2026-10-16T22:03+08:00",
+"generated": "2026-10-16T14:51+00:00",
 "student": "Châu Anh",
+"exams": {
+"maths_p1": {
+"subject": "maths",
+"title": "Cambridge International A Level Mathematics 9709 — Paper 1 Pure Mathematics 1 (75 marks, 1h50)",
+"dates": []
+},
+"econ_igcse": {
+"subject": "econ",
+"title": "Cambridge IGCSE Economics 0455 — Paper 1 MCQ (30 marks, 30%) + Paper 2 Structured (90 marks, 70%)",
+"dates": []
+},
+"business_igcse": {
+"subject": "business",
+"title": "Cambridge IGCSE Business Studies 0450 — Paper 1 Short answer & data response (80 marks, 50%) + Paper 2 Case study (80 marks, 50%)",
+"dates": [
+{
+"paper": "Paper 1",
+"date": "2026-10-06"
+},
+{
+"paper": "Paper 2",
+"date": "2026-10-16"
+}
+]
+},
+"sat_math": {
+"subject": "maths",
+"title": "Digital SAT Math (44 questions, 70 min) — College Board domain weights",
+"dates": []
+}
+},
 "subjects": {
 "maths": {
 "label_en": "Maths",
