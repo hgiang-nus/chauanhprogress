@@ -1,0 +1,101 @@
+[
+{
+"subject": "business",
+"session": "Session 01 · Foundation",
+"title": "How Marks Are Earned",
+"blurb": "Command words, the four skills, the mark ladder and the D-R-W-D conclusion formula.",
+"status": "ready",
+"units": "",
+"file": "../session-01.html"
+},
+{
+"subject": "business",
+"session": "Session 02 · Unit 1 · 1.1–1.5",
+"title": "Understanding Business Activity",
+"blurb": "A · Key concepts B · Exam tips & mistakes C · 40-mark mock (Phở Hà, Sao Mai Bakery).",
+"status": "ready",
+"units": "1",
+"file": "../session-02.html"
+},
+{
+"subject": "business",
+"session": "Session 03 · Unit 2 Part 1 · 2.1–2.2",
+"title": "Motivation, Organisation & Management",
+"blurb": "A* concept review (Maslow, Taylor, Herzberg, pay-system lab, hierarchy explorer), 14-case lab (Tết bonuses 2026, Samsung strike 2024, Vietnam's 2025 delayering), exam tips, 80-mark mock.",
+"status": "ready",
+"units": "2",
+"file": "../session-03.html"
+},
+{
+"subject": "business",
+"session": "Session 03b · Unit 2 Part 2 · 2.3–2.4",
+"title": "Recruitment, Training & Communication",
+"blurb": "A* concept review (candidate scorer, turnover cost calculator, communication chooser), 14-case lab (PouYuen redundancies, 2026 minimum wage, Better.com layoffs), exam tips, 80-mark mock.",
+"status": "ready",
+"units": "2",
+"file": "../session-03b.html"
+},
+{
+"subject": "business",
+"session": "Session 04 · Unit 3 · 3.1–3.4",
+"title": "Marketing",
+"blurb": "Full Unit 3 in 8 modular sections (118 slides): concepts, drills and 6-mark practice for each; exam tips; 80-mark mock.",
+"status": "ready",
+"units": "3",
+"file": "../session-04.html"
+},
+{
+"subject": "business",
+"session": "Session 05 · Unit 4 Part 1 · 4.1–4.2",
+"title": "Production, Costs & Break-Even",
+"blurb": "Concept review, a 15-case practice lab (textbook, Toyota, Samsung Vietnam, Airbus) with an interactive break-even chart, exam tips, 80-mark mock.",
+"status": "ready",
+"units": "4",
+"file": "../session-05.html"
+},
+{
+"subject": "business",
+"session": "Session 5b · Unit 4 Part 2 · 4.3–4.4",
+"title": "Quality & Location",
+"blurb": "A* concept review (cost of quality, weighted scoring tool), 14-case lab (Rolls-Royce, Boeing 2024, Samsung Note 7, LEGO Vietnam, 2025 tariffs), exam tips, 80-mark mock.",
+"status": "ready",
+"units": "4",
+"file": "../session-05b.html"
+},
+{
+"subject": "business",
+"session": "Session 06 · Unit 5 Part 1 · 5.1",
+"title": "Business Finance: Needs & Sources",
+"blurb": "A* concept review (debt vs equity, gearing, finance cost comparator), 14-case lab (Techcom Securities IPO, Novaland, VBSP micro-finance), exam tips, 80-mark mock.",
+"status": "ready",
+"units": "5",
+"file": "../session-06.html"
+},
+{
+"subject": "business",
+"session": "Session 06b · Unit 5 Part 2 · 5.2–5.3",
+"title": "Cash Flow & Income Statements",
+"blurb": "A* concept review (profit-to-cash bridge, cash gap, cash-flow workbench, income-statement builder), 14-case lab (Bamboo Airways 2023, Vinamilk 2025, coffee exporters 2024), exam tips, 80-mark mock.",
+"status": "ready",
+"units": "5",
+"file": "../session-06b.html"
+},
+{
+"subject": "business",
+"session": "Session 06c · Unit 5 Part 3 · 5.4–5.5",
+"title": "Financial Position & Ratios",
+"blurb": "Statements of financial position and analysis of accounts.",
+"status": "coming_soon",
+"units": "5",
+"file": ""
+},
+{
+"subject": "business",
+"session": "Session 07 · Unit 6",
+"title": "External Influences",
+"blurb": "Economic, environmental, ethical and international issues.",
+"status": "coming_soon",
+"units": "6",
+"file": ""
+}
+]

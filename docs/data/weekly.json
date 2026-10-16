@@ -1,0 +1,410 @@
+[
+{
+"week": "2026-06-15",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-15",
+"subject": "econ",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-15",
+"subject": "maths",
+"sessions": 4,
+"hours": 6.0,
+"topics": "chia sẻ về syllabus và quiz 60 phút để đánh giá năng lực · ôn lại algebra & Quadratics I · Quadratics II & min-max points · Substitution Method & Completing the Square",
+"units": "Diagnostic · Quadratics"
+},
+{
+"week": "2026-06-22",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-22",
+"subject": "econ",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-22",
+"subject": "maths",
+"sessions": 2,
+"hours": 3.0,
+"topics": "Quadratics III & xác định tồn tại quadratics solution · Intersections & Inequality I",
+"units": "Quadratics"
+},
+{
+"week": "2026-06-29",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-29",
+"subject": "econ",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-06-29",
+"subject": "maths",
+"sessions": 5,
+"hours": 7.5,
+"topics": "Intersections & Inequality II · Function Domain & Range · One-to-One, Many-to-One & Composite Function I · Composite Function II · Inverse function",
+"units": "Quadratics · Functions"
+},
+{
+"week": "2026-07-06",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-06",
+"subject": "econ",
+"sessions": 3,
+"hours": 4.5,
+"topics": "Syllabus + Exam illustration and Entrance Quiz · Introduction to Economics + Nature of Economics Problem · Factors of Production",
+"units": "Diagnostic · The basic economic problem"
+},
+{
+"week": "2026-07-06",
+"subject": "maths",
+"sessions": 2,
+"hours": 3.0,
+"topics": "Length of a line segment and midpoint · Parallel and perpendicular lines",
+"units": "Coordinate geometry"
+},
+{
+"week": "2026-07-13",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-13",
+"subject": "econ",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-13",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-20",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-20",
+"subject": "econ",
+"sessions": 3,
+"hours": 4.5,
+"topics": "Opportunity Cost · Production Possibility Curves + Exam preparation · Review session 1",
+"units": "The basic economic problem"
+},
+{
+"week": "2026-07-20",
+"subject": "maths",
+"sessions": 4,
+"hours": 6.0,
+"topics": "Coordinate Geometries & Equation of Linear Function · Equation of Circle and Revision · Revision Midterm I · Midterm I",
+"units": "Coordinate geometry · Review · Assessment"
+},
+{
+"week": "2026-07-27",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-07-27",
+"subject": "econ",
+"sessions": 3,
+"hours": 4.5,
+"topics": "How Market Works + mid-course evaluation · Demand side + Equilibrium · Supply side + Equilibrium state",
+"units": "Allocation of resources"
+},
+{
+"week": "2026-07-27",
+"subject": "maths",
+"sessions": 2,
+"hours": 3.0,
+"topics": "Circular measure & radians · SAT circular questions - Intro to Sine Cosine",
+"units": "Circular measure · Trigonometry"
+},
+{
+"week": "2026-08-03",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-03",
+"subject": "econ",
+"sessions": 3,
+"hours": 4.5,
+"topics": "Changes in Price: Supply and Demand interaction · Review Supply and Demand (part 1) · Review Supply and Demand (part 2)",
+"units": "Allocation of resources"
+},
+{
+"week": "2026-08-03",
+"subject": "maths",
+"sessions": 1,
+"hours": 1.5,
+"topics": "Trigonometric Ratio of General Angles",
+"units": "Trigonometry"
+},
+{
+"week": "2026-08-10",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-10",
+"subject": "econ",
+"sessions": 2,
+"hours": 4.0,
+"topics": "Price Elasticity of Demand · Price Elasticity of Supply + 1/2 The Market Economics System",
+"units": "Allocation of resources"
+},
+{
+"week": "2026-08-10",
+"subject": "maths",
+"sessions": 1,
+"hours": 1.5,
+"topics": "Period and Amplitude",
+"units": "Trigonometry"
+},
+{
+"week": "2026-08-17",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-17",
+"subject": "econ",
+"sessions": 2,
+"hours": 4.0,
+"topics": "1/2 Market Economics System + Hướng dẫn bài trên lớp · Market Failure - Why Invisible Hand Fail",
+"units": "Allocation of resources"
+},
+{
+"week": "2026-08-17",
+"subject": "maths",
+"sessions": 1,
+"hours": 1.5,
+"topics": "Application of Many-to-1 function and Trigonometric Equations",
+"units": "Trigonometry"
+},
+{
+"week": "2026-08-24",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-24",
+"subject": "econ",
+"sessions": 1,
+"hours": 2.0,
+"topics": "Review Section 2",
+"units": "Allocation of resources"
+},
+{
+"week": "2026-08-24",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-31",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-08-31",
+"subject": "econ",
+"sessions": 3,
+"hours": 6.0,
+"topics": "Mixed Market + Hướng dẫn bài trên lớp · Writing Essay Correction · Money and Banking",
+"units": "Allocation of resources · Exam skills · Microeconomic decision makers"
+},
+{
+"week": "2026-08-31",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-07",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-07",
+"subject": "econ",
+"sessions": 2,
+"hours": 4.0,
+"topics": "Households: Spend, Save or Borrow? (Household Economics) · Workers: Why Some Jobs Pay More (Labor Economics)",
+"units": "Microeconomic decision makers"
+},
+{
+"week": "2026-09-07",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-14",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-14",
+"subject": "econ",
+"sessions": 2,
+"hours": 3.5,
+"topics": "Review Section 2 · Labor Union (Labor Economics)",
+"units": "Allocation of resources · Microeconomic decision makers"
+},
+{
+"week": "2026-09-14",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-21",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-21",
+"subject": "econ",
+"sessions": 3,
+"hours": 6.0,
+"topics": "Firms - Small, Large, and Growing · Review Section 3 · Review Microeconomics (part 1)",
+"units": "Microeconomic decision makers · Review"
+},
+{
+"week": "2026-09-21",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-28",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-09-28",
+"subject": "econ",
+"sessions": 2,
+"hours": 4.0,
+"topics": "Review Microeconomics (part 2) · Review Midterm (part 1)",
+"units": "Review"
+},
+{
+"week": "2026-09-28",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-10-05",
+"subject": "business",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+},
+{
+"week": "2026-10-05",
+"subject": "econ",
+"sessions": 2,
+"hours": 3.5,
+"topics": "The Role of Government · What Government Aims For",
+"units": "Government and the macroeconomy"
+},
+{
+"week": "2026-10-05",
+"subject": "maths",
+"sessions": 0,
+"hours": 0.0,
+"topics": "",
+"units": ""
+}
+]

@@ -1,0 +1,38 @@
+[
+{
+"item_en": "Clarity of explanations",
+"item_vi": "Độ rõ ràng khi giảng",
+"score": 5,
+"max": 5
+},
+{
+"item_en": "Pace of the course",
+"item_vi": "Nhịp độ khoá học",
+"score": 4,
+"max": 5
+},
+{
+"item_en": "Instructor's interest in learning",
+"item_vi": "Sự quan tâm của thầy",
+"score": 5,
+"max": 5
+},
+{
+"item_en": "Overall teaching",
+"item_vi": "Giảng dạy nói chung",
+"score": 5,
+"max": 5
+},
+{
+"item_en": "Overall course",
+"item_vi": "Khoá học nói chung",
+"score": 4,
+"max": 5
+},
+{
+"item_en": "Self-study hours per week",
+"item_vi": "Giờ tự học mỗi tuần",
+"score": 7.5,
+"max": null
+}
+]

@@ -1,0 +1,101 @@
+[
+{
+"month": "2026-07",
+"subject": "maths",
+"planned_en": "Algebra foundations: surds, indices, quadratics, polynomials",
+"planned_vi": "Nền tảng đại số: căn, luỹ thừa, hàm bậc hai, đa thức",
+"sessions": 10,
+"hours": 15.0,
+"actual_en": "Functions · Coordinate geometry · Circular measure",
+"actual_vi": "Hàm số · Hình học toạ độ · Số đo cung tròn (radian)",
+"verdict": "ahead"
+},
+{
+"month": "2026-08",
+"subject": "maths",
+"planned_en": "Coordinate geometry, graphs & transformations; equations, inequalities & functions",
+"planned_vi": "Hình học toạ độ, đồ thị & phép biến hình; phương trình, bất phương trình & hàm số",
+"sessions": 4,
+"hours": 6.0,
+"actual_en": "Trigonometry",
+"actual_vi": "Lượng giác",
+"verdict": "ahead"
+},
+{
+"month": "2026-09",
+"subject": "maths",
+"planned_en": "Trigonometry: identities, equations & graphs; radian measure",
+"planned_vi": "Lượng giác: đồng nhất thức, phương trình & đồ thị; radian",
+"sessions": 0,
+"hours": 0,
+"actual_en": "No sessions logged",
+"actual_vi": "Chưa có buổi nào được ghi",
+"verdict": "unreported"
+},
+{
+"month": "2026-10",
+"subject": "maths",
+"planned_en": "Differentiation: rules & applications",
+"planned_vi": "Đạo hàm: quy tắc & ứng dụng",
+"sessions": 0,
+"hours": 0,
+"actual_en": "No sessions logged",
+"actual_vi": "Chưa có buổi nào được ghi",
+"verdict": "unreported"
+},
+{
+"month": "2026-07",
+"subject": "econ",
+"planned_en": "The economic problem, scarcity & PPF; types of economy; intro to microeconomics",
+"planned_vi": "Vấn đề kinh tế, khan hiếm & PPF; các loại hình kinh tế; nhập môn vi mô",
+"sessions": 9,
+"hours": 13.5,
+"actual_en": "The basic economic problem · Allocation of resources",
+"actual_vi": "Vấn đề kinh tế cơ bản · Phân bổ nguồn lực",
+"verdict": "on_plan"
+},
+{
+"month": "2026-08",
+"subject": "econ",
+"planned_en": "Demand, supply & market equilibrium; the price mechanism",
+"planned_vi": "Cầu, cung & cân bằng thị trường; cơ chế giá",
+"sessions": 9,
+"hours": 16.5,
+"actual_en": "Allocation of resources",
+"actual_vi": "Phân bổ nguồn lực",
+"verdict": "ahead"
+},
+{
+"month": "2026-09",
+"subject": "econ",
+"planned_en": "Elasticities: PED, YED, XED, PES & applications",
+"planned_vi": "Độ co giãn: PED, YED, XED, PES & ứng dụng",
+"sessions": 9,
+"hours": 17.5,
+"actual_en": "Microeconomic decision makers · Allocation of resources",
+"actual_vi": "Các chủ thể kinh tế vi mô · Phân bổ nguồn lực",
+"verdict": "ahead"
+},
+{
+"month": "2026-10",
+"subject": "econ",
+"planned_en": "Market failure: externalities, public & merit goods, information gaps",
+"planned_vi": "Thất bại thị trường: ngoại ứng, hàng hoá công & khuyến dụng, thiếu thông tin",
+"sessions": 4,
+"hours": 7.5,
+"actual_en": "Government and the macroeconomy",
+"actual_vi": "Chính phủ và kinh tế vĩ mô",
+"verdict": "ahead"
+},
+{
+"month": "2026-10",
+"subject": "business",
+"planned_en": "IGCSE Business 0450 revision: Units 1–5 decks, Paper 1 (6 Oct) and Paper 2 (16 Oct)",
+"planned_vi": "Ôn thi IGCSE Business 0450: bài giảng Unit 1–5, Paper 1 (6/10) và Paper 2 (16/10)",
+"sessions": 0,
+"hours": 0,
+"actual_en": "No sessions logged",
+"actual_vi": "Chưa có buổi nào được ghi",
+"verdict": "unreported"
+}
+]

@@ -1,0 +1,634 @@
+{
+ "_note": "Maps lesson-content keywords in the tutors' logs to exam syllabus units. Weights are INDICATIVE shares of exam marks, estimated from recent past papers / the published syllabus; they are not official figures. Edit freely.",
+ "maths": {
+  "exam": "Cambridge International A Level Mathematics 9709 — Paper 1 Pure Mathematics 1 (75 marks, 1h50)",
+  "units": [
+   {
+    "id": "P1.1",
+    "name_en": "Quadratics",
+    "name_vi": "Hàm bậc hai",
+    "weight": 8,
+    "keywords": [
+     "quadratic",
+     "completing the square",
+     "substitution method",
+     "algebra",
+     "intersection",
+     "inequalit"
+    ]
+   },
+   {
+    "id": "P1.2",
+    "name_en": "Functions",
+    "name_vi": "Hàm số",
+    "weight": 10,
+    "keywords": [
+     "function",
+     "composite",
+     "inverse",
+     "domain",
+     "range",
+     "one-to-one",
+     "many-to-one",
+     "many-to-1"
+    ]
+   },
+   {
+    "id": "P1.3",
+    "name_en": "Coordinate geometry",
+    "name_vi": "Hình học toạ độ",
+    "weight": 11,
+    "keywords": [
+     "line segment",
+     "midpoint",
+     "parallel",
+     "perpendicular",
+     "coordinate",
+     "circle",
+     "linear function"
+    ]
+   },
+   {
+    "id": "P1.4",
+    "name_en": "Circular measure",
+    "name_vi": "Số đo cung tròn (radian)",
+    "weight": 8,
+    "keywords": [
+     "circular measure",
+     "radian",
+     "circular"
+    ]
+   },
+   {
+    "id": "P1.5",
+    "name_en": "Trigonometry",
+    "name_vi": "Lượng giác",
+    "weight": 13,
+    "keywords": [
+     "sine",
+     "cosine",
+     "trigonometric",
+     "trigonometry",
+     "period and amplitude",
+     "amplitude"
+    ]
+   },
+   {
+    "id": "P1.6",
+    "name_en": "Series",
+    "name_vi": "Dãy số & chuỗi",
+    "weight": 10,
+    "keywords": [
+     "series",
+     "binomial",
+     "arithmetic progression",
+     "geometric progression"
+    ]
+   },
+   {
+    "id": "P1.7",
+    "name_en": "Differentiation",
+    "name_vi": "Đạo hàm",
+    "weight": 20,
+    "keywords": [
+     "differentiat",
+     "derivative",
+     "tangent",
+     "stationary"
+    ]
+   },
+   {
+    "id": "P1.8",
+    "name_en": "Integration",
+    "name_vi": "Tích phân",
+    "weight": 20,
+    "keywords": [
+     "integrat",
+     "area under"
+    ]
+   }
+  ],
+  "sat": {
+   "exam": "Digital SAT Math (44 questions, 70 min) — College Board domain weights",
+   "domains": [
+    {
+     "name_en": "Algebra",
+     "name_vi": "Đại số",
+     "weight": 35,
+     "feeds_from": [
+      "P1.3"
+     ],
+     "detail_en": "Linear equations, systems, inequalities, linear functions",
+     "detail_vi": "Phương trình tuyến tính, hệ phương trình, bất phương trình, hàm tuyến tính"
+    },
+    {
+     "name_en": "Advanced Math",
+     "name_vi": "Toán nâng cao",
+     "weight": 35,
+     "feeds_from": [
+      "P1.1",
+      "P1.2"
+     ],
+     "detail_en": "Quadratics, nonlinear functions, equivalent expressions",
+     "detail_vi": "Hàm bậc hai, hàm phi tuyến, biến đổi biểu thức"
+    },
+    {
+     "name_en": "Problem-Solving & Data Analysis",
+     "name_vi": "Giải quyết vấn đề & phân tích dữ liệu",
+     "weight": 15,
+     "feeds_from": [],
+     "detail_en": "Ratios, percentages, statistics, probability",
+     "detail_vi": "Tỉ lệ, phần trăm, thống kê, xác suất"
+    },
+    {
+     "name_en": "Geometry & Trigonometry",
+     "name_vi": "Hình học & lượng giác",
+     "weight": 15,
+     "feeds_from": [
+      "P1.3",
+      "P1.4",
+      "P1.5"
+     ],
+     "detail_en": "Lines, angles, triangles, circles, right-triangle trig",
+     "detail_vi": "Đường thẳng, góc, tam giác, đường tròn, lượng giác tam giác vuông"
+    }
+   ]
+  }
+ },
+ "econ": {
+  "exam": "Cambridge IGCSE Economics 0455 — Paper 1 MCQ (30 marks, 30%) + Paper 2 Structured (90 marks, 70%)",
+  "units": [
+   {
+    "id": "1",
+    "name_en": "The basic economic problem",
+    "name_vi": "Vấn đề kinh tế cơ bản",
+    "weight": 10,
+    "subtopics_en": [
+     "Nature of the economic problem",
+     "Factors of production",
+     "Opportunity cost",
+     "Production possibility curve"
+    ],
+    "keywords": [
+     "nature of economics",
+     "introduction to economics",
+     "factors of production",
+     "opportunity cost",
+     "production possibility",
+     "section 1"
+    ]
+   },
+   {
+    "id": "2",
+    "name_en": "Allocation of resources",
+    "name_vi": "Phân bổ nguồn lực",
+    "weight": 28,
+    "subtopics_en": [
+     "Micro & macro",
+     "Role of markets",
+     "Demand",
+     "Supply",
+     "Price determination",
+     "Price changes",
+     "PED",
+     "PES",
+     "Market economic system",
+     "Market failure",
+     "Mixed economic system"
+    ],
+    "keywords": [
+     "how market works",
+     "demand",
+     "supply",
+     "equilibrium",
+     "elasticity",
+     "market economics system",
+     "market failure",
+     "mixed market",
+     "section 2"
+    ]
+   },
+   {
+    "id": "3",
+    "name_en": "Microeconomic decision makers",
+    "name_vi": "Các chủ thể kinh tế vi mô",
+    "weight": 22,
+    "subtopics_en": [
+     "Money & banking",
+     "Households",
+     "Workers",
+     "Trade unions",
+     "Firms",
+     "Firms & production",
+     "Costs, revenue & objectives",
+     "Market structure"
+    ],
+    "keywords": [
+     "money and banking",
+     "household",
+     "workers",
+     "labor",
+     "labour",
+     "firms",
+     "section 3",
+     "microeconomics"
+    ]
+   },
+   {
+    "id": "4",
+    "name_en": "Government and the macroeconomy",
+    "name_vi": "Chính phủ và kinh tế vĩ mô",
+    "weight": 22,
+    "subtopics_en": [
+     "Role of government",
+     "Macroeconomic aims",
+     "Fiscal policy",
+     "Monetary policy",
+     "Supply-side policy",
+     "Economic growth",
+     "Employment & unemployment",
+     "Inflation & deflation"
+    ],
+    "keywords": [
+     "role of government",
+     "government aims",
+     "fiscal",
+     "monetary",
+     "supply-side",
+     "inflation",
+     "unemployment",
+     "economic growth"
+    ]
+   },
+   {
+    "id": "5",
+    "name_en": "Economic development",
+    "name_vi": "Phát triển kinh tế",
+    "weight": 9,
+    "subtopics_en": [
+     "Living standards",
+     "Poverty",
+     "Population",
+     "Differences in economic development"
+    ],
+    "keywords": [
+     "living standard",
+     "poverty",
+     "population",
+     "development"
+    ]
+   },
+   {
+    "id": "6",
+    "name_en": "International trade & globalisation",
+    "name_vi": "Thương mại quốc tế & toàn cầu hoá",
+    "weight": 9,
+    "subtopics_en": [
+     "International specialisation",
+     "Globalisation, FTAs & MNCs",
+     "Foreign exchange rates",
+     "Current account of BoP"
+    ],
+    "keywords": [
+     "international trade",
+     "globalisation",
+     "exchange rate",
+     "balance of payments",
+     "specialisation"
+    ]
+   }
+  ],
+  "subtopics_covered": {
+   "1": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "2": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "3": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "4": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "5": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "6": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  "alevel_bridge_en": "A Level Economics 9708 (AS): 1 Basic economic ideas & resource allocation · 2 The price system & the microeconomy · 3 Government microeconomic intervention · 4 The macroeconomy · 5 Government macroeconomic intervention. IGCSE sections 1–3 are the direct foundation for AS sections 1–3.",
+  "alevel_bridge_vi": "A Level Economics 9708 (AS): 1 Các khái niệm kinh tế cơ bản & phân bổ nguồn lực · 2 Hệ thống giá & kinh tế vi mô · 3 Can thiệp vi mô của chính phủ · 4 Kinh tế vĩ mô · 5 Can thiệp vĩ mô của chính phủ. Các phần 1–3 của IGCSE là nền tảng trực tiếp cho các phần 1–3 của AS."
+ },
+ "business": {
+  "exam": "Cambridge IGCSE Business Studies 0450 — Paper 1 Short answer & data response (80 marks, 50%) + Paper 2 Case study (80 marks, 50%)",
+  "units": [
+   {
+    "id": "1",
+    "name_en": "Understanding business activity",
+    "name_vi": "Hiểu về hoạt động kinh doanh",
+    "weight": 20,
+    "subtopics_en": [
+     "1.1 Business activity",
+     "1.2 Classification of businesses",
+     "1.3 Enterprise, growth & size",
+     "1.4 Types of organisation",
+     "1.5 Objectives & stakeholders"
+    ],
+    "keywords": [
+     "business activity",
+     "sectors",
+     "enterprise",
+     "stakeholder",
+     "objectives",
+     "sole trader",
+     "partnership",
+     "unit 1"
+    ]
+   },
+   {
+    "id": "2",
+    "name_en": "People in business",
+    "name_vi": "Con người trong kinh doanh",
+    "weight": 16,
+    "subtopics_en": [
+     "2.1 Motivation",
+     "2.2 Organisation & management",
+     "2.3 Recruitment, selection & training",
+     "2.4 Communication"
+    ],
+    "keywords": [
+     "motivation",
+     "maslow",
+     "herzberg",
+     "organisation",
+     "management",
+     "recruitment",
+     "training",
+     "communication",
+     "unit 2"
+    ]
+   },
+   {
+    "id": "3",
+    "name_en": "Marketing",
+    "name_vi": "Marketing",
+    "weight": 16,
+    "subtopics_en": [
+     "3.1 Marketing, competition & the customer",
+     "3.2 Market research",
+     "3.3 Marketing mix",
+     "3.4 Marketing strategy"
+    ],
+    "keywords": [
+     "marketing",
+     "market research",
+     "4p",
+     "product",
+     "price",
+     "promotion",
+     "place",
+     "unit 3"
+    ]
+   },
+   {
+    "id": "4",
+    "name_en": "Operations management",
+    "name_vi": "Quản trị vận hành",
+    "weight": 16,
+    "subtopics_en": [
+     "4.1 Production of goods & services",
+     "4.2 Costs, scale & break-even",
+     "4.3 Quality",
+     "4.4 Location"
+    ],
+    "keywords": [
+     "production",
+     "break-even",
+     "costs",
+     "quality",
+     "location",
+     "lean",
+     "unit 4"
+    ]
+   },
+   {
+    "id": "5",
+    "name_en": "Financial information & decisions",
+    "name_vi": "Thông tin tài chính & quyết định",
+    "weight": 20,
+    "subtopics_en": [
+     "5.1 Business finance: needs & sources",
+     "5.2 Cash-flow forecasting",
+     "5.3 Income statements",
+     "5.4 Statement of financial position",
+     "5.5 Analysis of accounts"
+    ],
+    "keywords": [
+     "finance",
+     "sources of finance",
+     "cash flow",
+     "cash-flow",
+     "income statement",
+     "financial position",
+     "ratio",
+     "unit 5"
+    ]
+   },
+   {
+    "id": "6",
+    "name_en": "External influences on business activity",
+    "name_vi": "Yếu tố bên ngoài",
+    "weight": 12,
+    "subtopics_en": [
+     "6.1 Economic issues",
+     "6.2 Environmental & ethical issues",
+     "6.3 Business & the international economy",
+     "6.4 (legacy) Government influence"
+    ],
+    "keywords": [
+     "economic issues",
+     "ethical",
+     "environmental",
+     "international",
+     "exchange rate",
+     "unit 6"
+    ]
+   }
+  ],
+  "subtopics_covered": {
+   "1": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "2": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "3": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "4": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "5": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "6": [
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  "hub_unit_map": {
+   "_note": "session-card 'num' text → list of (unit, subtopic indexes 0-based) that deck prepares",
+   "Session 01": [],
+   "Session 02": [
+    [
+     "1",
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    ]
+   ],
+   "Session 03 ": [
+    [
+     "2",
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   "Session 03b": [
+    [
+     "2",
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "Session 04": [
+    [
+     "3",
+     [
+      0,
+      1,
+      2,
+      3
+     ]
+    ]
+   ],
+   "Session 05 ": [
+    [
+     "4",
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   "Session 5b": [
+    [
+     "4",
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "Session 06 ": [
+    [
+     "5",
+     [
+      0
+     ]
+    ]
+   ],
+   "Session 06b": [
+    [
+     "5",
+     [
+      1,
+      2
+     ]
+    ]
+   ],
+   "Session 06c": [
+    [
+     "5",
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "Session 07": [
+    [
+     "6",
+     [
+      0,
+      1,
+      2,
+      3
+     ]
+    ]
+   ]
+  }
+ }
+}

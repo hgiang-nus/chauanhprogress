@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Châu Anh Progress</title>
+<meta name="description" content="Weekly learning progress of Châu Anh in A-Level Maths, IGCSE Economics and IGCSE Business, built from the tutors' class logs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600&display=swap">
+<script src="assets/d3.v7.9.0.min.js"></script>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/dashboard.css">
+</head>
+<body>
+<div class="ca" id="top">
+  <header class="ca-head">
+    <div>
+      <h1 id="ca-h1">Châu Anh — tiến độ học tập</h1>
+      <p class="ca-sub" id="ca-sub">Toán A-Level (thầy Phát), Kinh tế IGCSE (thầy Duy) và Business IGCSE (cô Giang), tổng hợp từ nhật ký lớp học.</p>
+      <p class="ca-take" id="ca-take"><span class="ca-skel">—</span></p>
+      <p class="ca-upd"><span data-t="updated">Cập nhật</span> <span id="ca-updated">—</span></p>
+    </div>
+    <div class="ca-lang" role="group" aria-label="Ngôn ngữ / Language">
+      <button type="button" id="ca-lang-vi" aria-pressed="true">Tiếng Việt</button>
+      <button type="button" id="ca-lang-en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <section class="ca-tiles" id="summary" aria-label="Summary">
+    <div class="ca-tile ca-maths"><span class="ca-k" data-t="t_maths_hours">Giờ học Toán</span>
+      <span class="ca-v"><span data-f="totals.maths_hours" class="ca-skel">—</span><small><span data-f="totals.maths_sessions">—</span> <span data-t="sessions">buổi</span></small></span>
+      <span class="ca-d"><span data-t="from">từ</span> <span data-f="totals.maths_first">—</span> <span data-t="to">đến</span> <span data-f="totals.maths_last">—</span></span></div>
+    <div class="ca-tile ca-econ"><span class="ca-k" data-t="t_econ_hours">Giờ học Kinh tế</span>
+      <span class="ca-v"><span data-f="totals.econ_hours" class="ca-skel">—</span><small><span data-f="totals.econ_sessions">—</span> <span data-t="sessions">buổi</span></small></span>
+      <span class="ca-d"><span data-t="from">từ</span> <span data-f="totals.econ_first">—</span> <span data-t="to">đến</span> <span data-f="totals.econ_last">—</span></span></div>
+    <div class="ca-tile ca-business"><span class="ca-k" data-t="t_business_hours">Giờ học Business</span>
+      <span class="ca-v"><span data-f="totals.business_hours" class="ca-skel">—</span><small><span data-f="totals.business_sessions">—</span> <span data-t="sessions">buổi</span></small></span>
+      <span class="ca-d" id="ca-business-tile-note" data-t="d_business">chưa có nhật ký lớp; xem bài giảng đã soạn ở mục 2</span></div>
+    <div class="ca-tile"><span class="ca-k" data-t="t_all">Tổng cộng</span>
+      <span class="ca-v"><span data-f="totals.all_hours" class="ca-skel">—</span><small><span data-f="totals.all_sessions">—</span> <span data-t="sessions">buổi</span></small></span>
+      <span class="ca-d"><span data-f="totals.weeks">—</span> <span data-t="d_all">tuần có buổi học</span></span></div>
+    <div class="ca-tile ca-maths"><span class="ca-k" data-t="t_p1">A-Level Toán · Paper 1 đã phủ</span>
+      <span class="ca-v"><span data-f="coverage.maths_p1" class="ca-skel">—</span></span>
+      <span class="ca-d" data-t="d_p1">theo trọng số điểm thi (ước tính)</span></div>
+    <div class="ca-tile ca-econ"><span class="ca-k" data-t="t_igcse">IGCSE Kinh tế đã phủ</span>
+      <span class="ca-v"><span data-f="coverage.econ_igcse" class="ca-skel">—</span></span>
+      <span class="ca-d"><span data-f="coverage.econ_subtopics">—</span> <span data-t="d_igcse">tiểu mục trong đề cương</span></span></div>
+    <div class="ca-tile ca-business"><span class="ca-k" data-t="t_bus">IGCSE Business · bài giảng sẵn sàng</span>
+      <span class="ca-v"><span data-f="coverage.business_prepared" class="ca-skel">—</span></span>
+      <span class="ca-d"><span data-f="coverage.business_subtopics">—</span> <span data-t="d_bus">tiểu mục có bài giảng</span></span></div>
+    <div class="ca-tile ca-maths"><span class="ca-k" data-t="t_sat">SAT Math đã chuẩn bị</span>
+      <span class="ca-v"><span data-f="coverage.sat_math" class="ca-skel">—</span></span>
+      <span class="ca-d" data-t="d_sat">theo trọng số 4 nhóm câu hỏi</span></div>
+  </section>
+
+  <h2 id="weekly" data-t="h_weekly">1 · Mỗi tuần học gì</h2>
+  <p data-t="p_weekly">Số giờ học mỗi tuần theo môn, và nội dung bài đã dạy. Tuần trống nghĩa là không có buổi nào được ghi trong nhật ký.</p>
+  <div class="ca-card">
+    <div class="ca-legend"><span><i class="ca-sw-maths"></i><span data-t="maths">Toán</span></span><span><i class="ca-sw-econ"></i><span data-t="econ">Kinh tế</span></span><span><i class="ca-sw-business"></i><span data-t="business">Business</span></span></div>
+    <div class="ca-chart ca-skel" id="ca-weekchart"></div>
+  </div>
+  <div class="ca-card" style="margin-top: var(--gap-md)">
+    <h3 data-t="h_weektable">Nội dung theo tuần</h3>
+    <p class="ca-note" data-t="n_weektable">Tuần bắt đầu từ thứ Hai. Nội dung là tên bài do thầy cô ghi trong nhật ký. Tuần gần nhất ở trên cùng.</p>
+    <div class="ca-table-wrap">
+      <table id="ca-weektable">
+        <thead><tr>
+          <th data-t="week">Tuần</th>
+          <th class="ca-num" data-t="maths_s">Toán</th><th data-t="maths_topics">Nội dung Toán</th>
+          <th class="ca-num" data-t="econ_s">Kinh tế</th><th data-t="econ_topics">Nội dung Kinh tế</th>
+          <th class="ca-num" data-t="business_s">Business</th><th data-t="business_topics">Nội dung Business</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2 id="exams" data-t="h_exams">2 · Đối chiếu với đề thi</h2>
+  <p data-t="p_exams">Mỗi thanh là một đề thi; độ rộng từng đoạn là tỉ trọng điểm ước tính của chủ đề đó. Đoạn đặc = đã dạy, đoạn sọc = dạy một phần, đoạn viền = đã có bài giảng nhưng chưa ghi buổi dạy, đoạn xám = chưa có.</p>
+  <div class="ca-grid">
+    <div class="ca-card" id="exam-maths">
+      <div class="ca-sylhead"><h3 data-t="h_p1">A-Level Mathematics 9709 · Paper 1 (Pure 1)</h3><span class="ca-big" data-f="coverage.maths_p1">—</span></div>
+      <p class="ca-note" data-t="n_p1">75 điểm, 110 phút. Tỉ trọng chủ đề ước tính từ các đề thi gần đây.</p>
+      <div class="ca-syl"><div class="ca-bar" id="ca-bar-maths_p1"></div><ul class="ca-units" id="ca-units-maths_p1"></ul></div>
+    </div>
+    <div class="ca-card" id="exam-econ">
+      <div class="ca-sylhead"><h3 data-t="h_igcse">IGCSE Economics 0455</h3><span class="ca-big" data-f="coverage.econ_igcse">—</span></div>
+      <p class="ca-note" data-t="n_igcse">Paper 1 trắc nghiệm (30%) + Paper 2 tự luận (70%). Tỉ trọng ước tính theo số tiểu mục của đề cương.</p>
+      <div class="ca-syl"><div class="ca-bar" id="ca-bar-econ_igcse"></div><ul class="ca-units" id="ca-units-econ_igcse"></ul></div>
+      <p class="ca-note" style="margin: var(--gap-md) 0 0" data-t="n_bridge">Bước tiếp theo là A-Level Economics 9708: phần 1–3 của IGCSE là nền tảng trực tiếp cho các phần AS 1–3 (khái niệm cơ bản, hệ thống giá, can thiệp vi mô của chính phủ).</p>
+    </div>
+    <div class="ca-card" id="exam-business">
+      <div class="ca-sylhead"><h3 data-t="h_bus">IGCSE Business Studies 0450</h3><span class="ca-big" data-f="coverage.business_prepared">—</span></div>
+      <p class="ca-note" data-t="n_bus">Paper 1 câu hỏi ngắn (50%) + Paper 2 tình huống (50%). Tỉ trọng ước tính theo số tiểu mục. Số % là phần đề cương đã có bài giảng; buổi dạy sẽ hiện khi có nhật ký.</p>
+      <div class="ca-syl"><div class="ca-bar" id="ca-bar-business_igcse"></div><ul class="ca-units" id="ca-units-business_igcse"></ul></div>
+      <h4 class="ca-h4" data-t="h_materials">Bài giảng ôn thi (Road to A*)</h4>
+      <ul class="ca-mats" id="ca-mats"></ul>
+    </div>
+    <div class="ca-card" id="exam-sat">
+      <div class="ca-sylhead"><h3 data-t="h_sat">SAT Math (Digital SAT)</h3><span class="ca-big" data-f="coverage.sat_math">—</span></div>
+      <p class="ca-note" data-t="n_sat">44 câu, 70 phút. Tỉ trọng 4 nhóm theo công bố của College Board. Mức chuẩn bị suy ra từ các chương A-Level đã học.</p>
+      <div class="ca-syl"><div class="ca-bar" id="ca-bar-sat_math"></div><ul class="ca-units" id="ca-units-sat_math"></ul></div>
+    </div>
+    <div class="ca-card" id="plan">
+      <h3 data-t="h_plan">Kế hoạch tháng đã thống nhất so với thực tế</h3>
+      <p class="ca-note" data-t="n_plan">Kế hoạch học thuật tháng 6/2026. “Nhanh hơn” = nội dung của tháng đó đã được dạy sớm hơn.</p>
+      <div class="ca-table-wrap">
+        <table id="ca-plantable">
+          <thead><tr><th data-t="month">Tháng</th><th data-t="subject">Môn</th><th data-t="planned">Kế hoạch</th><th data-t="actual">Thực tế dạy</th><th data-t="verdict">Đánh giá</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="observations" data-t="h_obs">3 · Điểm mạnh, điểm cần cải thiện và tiến bộ</h2>
+  <p data-t="p_obs">Trích từ nhận xét hằng tuần của các thầy cô và bản tự đánh giá của Châu Anh. Mỗi mục ghi rõ ngày và nguồn; phần in nghiêng là nguyên văn.</p>
+  <div class="ca-obs" id="ca-obs"></div>
+
+  <h2 id="gaps" data-t="h_gaps">4 · Khoảng trống cần bổ sung</h2>
+  <p data-t="p_gaps">Những gì nhật ký chưa cho biết. Đây là việc cần hỏi các thầy cô, không phải nhận xét về Châu Anh.</p>
+  <div class="ca-grid">
+    <div class="ca-col gap" id="ca-gaps"><div class="ca-items" id="ca-gap-items"></div></div>
+    <div class="ca-card" id="evaluation">
+      <h3 data-t="h_eval">Châu Anh tự đánh giá lớp Toán (26/7)</h3>
+      <p class="ca-note" data-t="n_eval">Phiếu khảo sát giữa kỳ do thầy Phát gửi; thang 5 điểm.</p>
+      <div class="ca-eval" id="ca-eval"></div>
+    </div>
+  </div>
+
+  <footer class="ca-foot">
+    <p data-t="f1">Nguồn: nhật ký lớp học Payment_Maths.xlsx (thầy Phát), Payment_Econs.xlsx (thầy Duy), Payment_Business.xlsx (Business) và trang bài giảng IGCSE Business; dữ liệu thô nằm trong thư mục data/ của trang này.</p>
+    <p data-t="f2">Tỉ trọng chủ đề trong đề thi là ước tính từ đề cương và các đề thi gần đây, không phải số liệu chính thức của Cambridge hay College Board. Bảng này đo nội dung đã được dạy; kết quả bài kiểm tra sẽ được thêm khi các thầy cô báo cáo điểm.</p>
+  </footer>
+</div>
+<script src="assets/i18n.js"></script>
+<script src="assets/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+"generated": "2026-10-16T22:03+08:00",
+"student": "Châu Anh",
+"subjects": {
+"maths": {
+"label_en": "Maths",
+"label_vi": "Toán",
+"tutor": "Phat",
+"exam": "maths_p1",
+"log": "Payment_Maths.xlsx",
+"log_found": true
+},
+"econ": {
+"label_en": "Economics",
+"label_vi": "Kinh tế",
+"tutor": "Duy",
+"exam": "econ_igcse",
+"log": "Payment_Econs.xlsx",
+"log_found": true
+},
+"business": {
+"label_en": "Business",
+"label_vi": "Kinh doanh",
+"tutor": "Giang / Duy",
+"exam": "business_igcse",
+"log": "Payment_Business.xlsx",
+"log_found": true
+}
+},
+"warnings": []
+}

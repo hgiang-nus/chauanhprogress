@@ -1,0 +1,32 @@
+{
+ "_note": "Edit paths if you move files. Every log must have the standard 'Class Log' sheet (same template as Payment_Econs.xlsx). A missing log file is skipped with a warning, not an error.",
+ "student": "Châu Anh",
+ "subjects": {
+  "maths": {
+   "label_en": "Maths",
+   "label_vi": "Toán",
+   "tutor": "Phat",
+   "log": "logs/Payment_Maths.xlsx",
+   "exam": "maths_p1"
+  },
+  "econ": {
+   "label_en": "Economics",
+   "label_vi": "Kinh tế",
+   "tutor": "Duy",
+   "log": "logs/Payment_Econs.xlsx",
+   "exam": "econ_igcse"
+  },
+  "business": {
+   "label_en": "Business",
+   "label_vi": "Kinh doanh",
+   "tutor": "Giang / Duy",
+   "log": "logs/Payment_Business.xlsx",
+   "exam": "business_igcse",
+   "course_hub": "logs/business_hub_index.html",
+   "_hub_note": "Copy of index.html from the 'IGCSE Business: Road to A*' GitHub Pages site. Each session-card there becomes a row of the materials dataset (ready / coming soon) and feeds the 'prepared' status on the Business syllabus bar.",
+   "course_hub_base": "../",
+   "_hub_base_note": "Prefix for deck links on the dashboard. \"../\" when the dashboard sits in a sub-folder (e.g. progress/) of the Road-to-A* site; a full URL like \"https://<user>.github.io/<repo>/\" when it is a separate repo."
+  }
+ },
+ "out_dir": "docs/data"
+}
